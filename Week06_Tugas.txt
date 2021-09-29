@@ -1,0 +1,9 @@
+1 (A).
+Ketika layar disentuh pada layar, maka akan menghasilkan efek lingkaran membesar dan mengecil dimulai dari posisi X dan Y pada layar yang disentuh tadi. Animasi membesar dan mengecil tersebut akan terjadi sebanyak 2 kali karena telah diatur pada method "setRepeatCount()". Warna lingkaran juga akan berubah menuju warna biru seiring dengan membesarnya ukuran lingkaran.
+
+2 (B).
+Ketika gambar kuda ditekan, maka akan menghasilkan efek seolah-olah kuda tersebut memang bergerak. Efek kuda bergerak tersebut dihasilkan oleh 11 gambar kuda yang terus berubah-ubah yang terdapat pada animation list pada flie "kuda_lari.xml".
+
+3 (C).
+Ketika tombol "Halo Spring" ditekan, tombol menghasilkan efek animasi seperti layaknya pegas (spring).
+Ketika tombol "Halo Fling" ditekan, tombol menghasilkan efek animasi berputar terhadap rotasi sumbu X.
