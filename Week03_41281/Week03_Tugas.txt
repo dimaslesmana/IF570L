@@ -1,0 +1,3 @@
+Penambahan kata ketika fab di-klik terjadi karena pada event listener onClick kita melakukan penambahan item pada linked list. Urutan kata yang ditambahkan dapat sesuai karena selain kita menambahkan item tersebut pada elemen terakhir dari linked list, sebelum menambahkan kata baru kita juga terlebih dahulu mendapatkan jumlah elemen yang ada di dalam list dengan method size() yang kemudian hasilnya ditambahkan dengan 1. Setiap event klik yang dilakukan juga akan langsung melakukan scroll ke elemen / item terakhir yang disebabkan oleh method smoothScrollToPosition().
+
+Munculnya toast ketika salah satu item di-klik disebabkan oleh event listener yang kita buat pada view holder yang terdapat pada adapter yang kemudian akan melakukan trigger method onClick().
