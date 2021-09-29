@@ -1,0 +1,23 @@
+2.
+a. Kosongkan Angka 1 dan Angka 2, lalu klik salah satu button.
+Akan terjadi NumberFormatException karena tidak ada input yang diberikan (empty string) yang dimana ketika akan di-parse ke double, akan terjadi error. Hal ini dapat diatasi dengan melakukan pengecekan apakah input yang dimasukkan pada masing-masing EditText mempunyai panjang string 0 alias empty string. Jika panjang string sama dengan 0, maka dapat langsung return dari method hitung tersebut.
+
+b. Kosongkan Angka 2, lalu klik button Bagi.
+Akan terjadi NumberFormatException karena tidak ada input yang diberikan (empty string) yang dimana ketika akan di-parse ke double, akan terjadi error. Hal ini dapat diatasi dengan melakukan pengecekan apakah input yang dimasukkan pada masing-masing EditText mempunyai panjang string 0 alias empty string. Jika panjang string sama dengan 0, maka dapat langsung return dari method hitung tersebut.
+
+c. Isi 0 (nol) pada Angka 2, lalu klik button Bagi.
+Hasil akan bernilai "Infinity", karena bilangan berapapun jika dibagi dengan 0 maka hasilnya tetap 0. Hal ini dapat diatasi dengan melakukan pengecekan apakah operand ke-2 pada bagian pembagian bernilai 0. Jika ya, maka set hasil pembagian menjadi 0.
+
+
+3.
+- Step over
+Akan menjalankan code pada baris dimana breakpoint berada, kemudian setelah selesai maka akan lanjut pada baris berikutnya dalam keadaan berhenti.
+
+- Step into
+Jika diletakkan pada baris yang memanggil suatu method, maka pilihan ini akan langsung masuk ke dalam method yang dipanggil tersebut.
+
+- Step out
+Akan langsung menyelesaikan sampai akhir dari sebuah block atau method. Kemudian akan kembali ke titik dimana kita melakukan step into.
+
+- Resume
+Melanjutkan program seperti biasanya.
