@@ -1,0 +1,1 @@
+Berdasarkan hasil pengujian, aplikasi dapat menggambar bentuk objek sesuai dengan Radio Button yang dipilih. Warna dari objek juga dapat diubah dengan menggunakan SeekBar RGB yang akan di-preview pada ImageButton di pojok kanan bawah. Canvas juga dapat dibersihkan dengan ImageButton Clear yang terdapat pada pojok kiri atas. 
