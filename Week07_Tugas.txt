@@ -1,0 +1,7 @@
+- Project A
+Ketika menekan tombol foto atau video, aplikasi akan menggunakan intent implisit untuk memanggil aplikasi yang bisa menangani pengambilan foto atau video. Untuk menerima hasil dari tangkapan foto atau video yang dilakukan oleh Intent, dapat menggunakan method startActivityForResult().
+
+- Project B
+Daftar video pada MainActivity ditampilkan dengan menggunakan Recycler View. Daftar video disimpan pada Linked List yang berisi object sumber video, sedangkan untuk penyimpanan file video-nya terdapat pada folder res/raw.
+
+Item yang terdapat pada recycler view tersebut sudah diterapkan event onClickListener dimana ketika item tersebut di-klik akan menampilkan DetailVideoActivity. Pengiriman data dari MainActivity ke DetailVideoActivity menggunakan Serializable agar kita dapat langsung melakukan passing object video ke DetailVideoActivity.
