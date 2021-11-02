@@ -1,0 +1,21 @@
+1. Project A
+- Untuk mengambil lokasi penyimpanan temporary, digunakan method getCacheDir().
+
+- Untuk mengambil lokasi penyimpanan internal, digunakan method getFilesDir().
+
+- Untuk mengambil lokasi penyimpanan eksternal, digunakan method getExternalFilesDir().
+
+- Untuk melakukan pembersihan file yang tersimpan pada cache dilakukan pada saat activity masuk ke tahap onDestroy(). Kemudian melakukan listing semua file yang ada dan menghapusnya satu per satu.
+
+
+2. Project B
+- Tombol Hitam, Merah, Biru, dan Hijau akan melakukan trigger pada method gantiBackground yang terletak di file MainActivity.java. Pada method tersebut, atribut warna background pada button akan disimpan ke dalam variabel mWarna yang kemudian akan digunakan untuk mengganti warna background TextView.
+
+- Tombol Tambah akan melakukan trigger pada method tambahCounter yang terletak di file MainActivity.java. Pada method tersebut, variabel mCount akan ditambahkan dengan 1, kemudian TextView counter akan diganti nilainya menjadi nilai dari mCount tersebut.
+
+- Tombol Reset akan melakukan trigger pada method resetCounter yang akan mengembalikan nilai counter dan warna background ke kondisi awal saat pertama kali membuka aplikasi.
+
+- Jika tidak menggunakan Saved Instance, pada saat device di-rotate maka nilai dan warna background dari TextView akan kembali ke keadaan awal, karena activity akan masuk ke tahap onDestroy dan akan di-create kembali di method onCreate.
+
+- Ketika keluar dari aplikasi, nilai dan warna background dari TextView akan kembali ke awal karena Saved Instance hanya berlaku untuk satu sesi aplikasi (sampai aplikasi keluar). Oleh karena itu, maka dibutuhkan Shared Preferences.
+
