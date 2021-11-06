@@ -1,0 +1,15 @@
+- Ketika FAB ditekan, aplikasi akan menampilkan DetailActivity dengan menggunakan Intent.
+
+- Ketika mencoba untuk menyimpan data dengan salah satu atau semua input kosong, maka akan muncul Toast bahwa semua data harus diisi.
+
+- Ketika tombol Batal diklik, maka aplikasi akan kembali ke activity utama.
+
+- Ketika semua input sudah terisi dan tombol Simpan diklik, aplikasi akan kembali ke activity utama dan data yang diinputkan sebelumnya sudah tersimpan di database.
+
+- Ketika mencoba untuk menambahkan data dengan NIM (Primary Key) yang sama, aplikasi akan kembali ke tampilan utama. Tetapi sebenarnya data tersebut tidak tersimpan di database karena pada SQLite Insert di Interface MahasiswaDAO, strategy yang dikonfigurasi ketika terjadi konflik pada PrimaryKey adalah "IGNORE".
+
+- Ketika melakukan swipe ke kiri pada data mahasiswa, data tersebut akan terhapus dari database dan akan muncul Toast yang menandakan bahwa data tersebut berhasil dihapus.
+
+- Ketika melakukan swipe ke kanan pada data mahasiswa, maka akan masuk ke DetailActivity. Pada activity tersebut EditText NIM tidak dapat di-edit karena pada class DetailActivity, ketika DetailActivity menerima key intent Extra, maka EditText tersebut akan di-disable.
+
+- Ketika action "Hapus Semua" diklik, maka semua data yang tersimpan di database akan terhapus.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tvItemNim"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:text="NIM"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvItemNama"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:text="Nama" />
+
+</LinearLayout>
