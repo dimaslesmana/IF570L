@@ -1,0 +1,24 @@
+1 (A) AsyncTask.
+Ketika tombol "Mulai Task" ditekan, maka aplikasi akan menjalankan sebuah AsyncTask. AsyncTask tersebut menerima beberapa parameter, yaitu Integer untuk digunakan pada method doInBackground, Integer untuk digunakan pada method onProgressUpdate, dan String untuk digunakan pada method onPostExecute.
+
+Sebelum AsyncTask dijalankan, aplikasi akan membuat Progress Bar menjadi visible dan me-reset nilai Progress Bar menjadi 0 melalui method onPreExecute.
+
+Method doInBackground akan menerima nilai integer random yang dikirim melalui method startTask. Kemudian method tersebut akan melakukan update progress ke UI Thread setiap 200ms sebanyak nilai random yang diperoleh sebelumnya. Update progress tersebut akan diterima oleh method onProgressUpdate yang akan mengubah TextView dan Progress Bar sesuai dengan progress saat ini.
+
+Ketika doInBackground selesai, maka akan masuk ke method terakhir yaitu onPostExecute. Method tersebut mempunyai sebuah parameter yang merupakan String hasil nilai return dari method doInBackground. Kemudian method tersebut akan mengubah TextView menjadi String yang di-return dari method doInBackground dan membuat Progress Bar menjadi invisible. 
+
+Ketika tombol "Mulai Task" ditekan secara terus menerus, aplikasi akan selalu menjalankan AsyncTask baru tanpa menunggu AsyncTask sebelumnya selesai.
+
+
+2 (B) AsyncTaskLoader.
+Ketika tombol "Mulai Task" ditekan, maka aplikasi akan menjalankan AsyncTaskLoader. Kemudian TextView dan Progress Bar akan berubah sesuai dengan progress saat ini, dan ketika selesai TextView akan berubah dengan pesan berapa lama Task ini dijalankan.
+
+Ketika tombol "Mulai Task" ditekan secara terus menerus aplikasi tidak akan menjalankan Task baru, karena dengan menggunakan Loader, aplikasi dapat melakukan pengecekan dan mengetahui apakah task tersebut dicoba untuk dijalankan dari Context yang sama.
+
+
+3 (C).
+- Unbound Service
+Ketika tombol "Mulai Service" ditekan sebanyak 3 kali tanpa menggunakan AsyncTask, aplikasi tersebut berpotensi untuk terjadi Not Responding karena service-service tersebut dijalankan melalui main thread. Namun, ketika menggunakan AsyncTask, service-service tersebut akan dijalankan secara asynchronous di thread-nya sendiri (di luar main thread).
+
+- Bound Service
+Ketika tombol "Tampilkan Waktu" ditekan, aplikasi akan menampilkan waktu dan tanggal saat ini menggunakan Toast. Waktu dan tanggal tersebut didapatkan dari CustomBoundService yang telah berhasil di-bind ke MainActivity dengan menggunakan ServiceConnection.
