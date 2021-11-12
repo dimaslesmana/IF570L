@@ -1,0 +1,5 @@
+- Saat dijalankan, aplikasi akan langsung melakukan GET request pada API endpoint 'posts'.
+
+- Method 'isSuccessful' hanya akan true jika API mengembalikan response code dari range 200 hingga 300.
+
+- Ketika koneksi internet pada perangkat android dimatikan, ketika melakukan GET request akan masuk ke dalam callback 'onFailure'.
