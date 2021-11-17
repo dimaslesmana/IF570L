@@ -1,0 +1,9 @@
+1 (A).
+Daftar sensor yang tersedia pada device yang menjalankan aplikasi ini akan ditampilkan ke dalam sebuah TextView. Untuk menggunakan sebuah sensor, dibutuhkan SensorManager. Pada aplikasi ini, SensorManager tersebut digunakan untuk mendapatkan list dari semua tipe sensor yang tersedia pada perangkat ini.
+
+2 (B).
+Aplikasi menampilkan 2 sensor yaitu Light Sensor dan Proximity Sensor. Untuk menggunakan sebuah sensor, dibutuhkan SensorManager. Pada aplikasi ini, SensorManager digunakan untuk mendapatkan sensor secara spesifik dengan menggunakan method getDefaultSensor dengan mengirim argumen tipe sensor yang diinginkan (Light & Proximity).
+
+Pada saat aplikasi berjalan (onStart), aplikasi akan melakukan register listener pada sensor sehingga ketika terjadi perubahan nilai pada sensor, dua TextView yang sebelumnya dibuat akan berubah nilainya menjadi nilai dari sensor tersebut melalui method onSensorChanged.
+
+Nilai dari kedua sensor tersebut dapat diubah melalui tombol 3 titik horizontal pada android emulator. Pada menu tersebut, kita dapat melakukan perubahan pada nilai kedua sensor tersebut melalui menu Virtual sensors --> Additional sensors.
