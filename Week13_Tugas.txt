@@ -1,0 +1,4 @@
+- Map akan melakukan zoom-in/zoom-out ketika tombol zoom-in/zoom-out ditekan.
+- Ketika tombol Tambah ditekan, maka akan diarahkan ke Activity Map baru (Map Tambah) yang berfungsi untuk menambahkan objek pada map.
+- Pada bagian map tambah, kita dapat menambahkan objek baru pada map seperti marker, radius, polyline, dan polygon.
+- Ketika objek yang telah ditambahkan melalui bagian map tambah berhasil disimpan, maka objek tersebut akan muncul pada map utama beserta dengan keterangan objek tersebut.
